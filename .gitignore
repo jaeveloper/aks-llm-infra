@@ -1,0 +1,43 @@
+# =========================
+# Terraform
+# =========================
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+crash.log
+crash.*.log
+terraform.rc
+.terraform.lock.hcl
+
+# =========================
+# Kubernetes / Helm
+# =========================
+*.log
+charts/
+*.tgz
+
+# =========================
+# Local tooling
+# =========================
+.vscode/
+.idea/
+*.swp
+*.bak
+
+# =========================
+# OS / Shell
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Credentials / Secrets
+# =========================
+*.pem
+*.key
+*.crt
+*.env
+.env.*
+azure.json
