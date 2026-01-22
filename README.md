@@ -39,18 +39,25 @@ This project reflects real‑world cloud infrastructure decision‑making under 
 **IMAGE C – Project Architecture**
 
 Client
+
 │
 │ (kubectl / port‑forward / internal or external ingress)
 ▼
 AKS Cluster
+
 ├── System Node Pool (CPU‑only)
 │     ├── Ingress Controller
 │     └── Ollama LLM Pods (CPU inference)
+
 │
+
 ├── GPU Node Pool (NVIDIA, scale‑to‑zero)
+
 │     └── Reserved for heavy inference workloads
+
 │
 ▼
+
 Azure Monitor / Grafana
 
 ### Design Principles
