@@ -36,6 +36,8 @@ This project reflects real‑world cloud infrastructure decision‑making under 
 
 ## Architecture Summary
 
+<img width="993" height="535" alt="image" src="https://github.com/user-attachments/assets/84afdf7d-5dad-4333-b861-29c3a5a5bedc" />
+
 **IMAGE C – Project Architecture**
 
 Client
@@ -71,6 +73,8 @@ Azure Monitor / Grafana
 
 ## Infrastructure Provisioning
 
+<img width="968" height="518" alt="image" src="https://github.com/user-attachments/assets/b70ee091-503d-44e0-b860-38e57bddba3e" />
+
 **IMAGE A – Terraform Code in VS Code**
 
 * AKS cluster provisioned using **Terraform**
@@ -87,6 +91,8 @@ This ensures GPU resources incur **no cost unless explicitly activated**.
 
 ## Kubernetes Cluster State
 
+<img width="963" height="479" alt="image" src="https://github.com/user-attachments/assets/e8f30376-5179-4de1-aa10-b593f53e34e8" />
+
 **IMAGE B – `kubectl get pods -A`**
 
 * System components running on CPU node pool
@@ -96,6 +102,8 @@ This ensures GPU resources incur **no cost unless explicitly activated**.
 ---
 
 ## LLM Deployment
+
+<img width="968" height="514" alt="image" src="https://github.com/user-attachments/assets/c0c9b76e-64bd-452b-a8e9-c30283f18745" />
 
 **IMAGE D – Create Namespace & Apply Deployment/Service**
 
@@ -108,6 +116,8 @@ This ensures GPU resources incur **no cost unless explicitly activated**.
 
 ## Model Management
 
+<img width="899" height="490" alt="image" src="https://github.com/user-attachments/assets/cf59ea34-23a3-4d16-96e7-667ad3d23348" />
+
 **IMAGE E – Pulling a CPU‑Safe Model into Ollama Pod**
 
 * Quantized, CPU‑safe model (`tinyllama`) pulled into the pod
@@ -117,6 +127,8 @@ This ensures GPU resources incur **no cost unless explicitly activated**.
 ---
 
 ## Internal Inference Validation
+
+<img width="857" height="396" alt="image" src="https://github.com/user-attachments/assets/6eb299f9-0e2e-4112-af34-9ddeafebe99c" />
 
 **IMAGE F – Testing `/api/tags` from Test Client**
 
@@ -128,6 +140,8 @@ This ensures GPU resources incur **no cost unless explicitly activated**.
 ---
 
 ## External Access via Ingress
+
+<img width="991" height="557" alt="image" src="https://github.com/user-attachments/assets/192b82d5-167f-4af8-83e9-6a2822ff028d" />
 
 **IMAGE G – NGINX Ingress Installed via Helm**
 
@@ -141,6 +155,9 @@ This ensures GPU resources incur **no cost unless explicitly activated**.
 
 ## External Connectivity Test
 
+<img width="951" height="519" alt="image" src="https://github.com/user-attachments/assets/48702465-29f4-46e6-a4c4-b8dd957bfb51" />
+<img width="1090" height="222" alt="image" src="https://github.com/user-attachments/assets/b8cb1b5f-5ac6-484a-bf56-c9673189e94a" />
+
 **IMAGE H – External API Invocation via Public IP**
 
 * REST requests sent to the public LoadBalancer IP
@@ -149,6 +166,8 @@ This ensures GPU resources incur **no cost unless explicitly activated**.
 ---
 
 ## LLM Interaction
+
+<img width="976" height="551" alt="image" src="https://github.com/user-attachments/assets/5f2b819f-2dc1-4f56-b938-71a7edc53a35" />
 
 **IMAGE I – Interacting with the LLM**
 
@@ -159,6 +178,8 @@ This ensures GPU resources incur **no cost unless explicitly activated**.
 ---
 
 ## Autoscaling Behavior
+
+<img width="889" height="462" alt="image" src="https://github.com/user-attachments/assets/94878acd-8174-425b-a7bc-40a094a160ce" />
 
 **IMAGE J – HPA Scaling from 1 to 3 Replicas**
 
@@ -171,6 +192,8 @@ This ensures GPU resources incur **no cost unless explicitly activated**.
 ---
 
 ## Health Probes & Stability
+
+<img width="1090" height="554" alt="image" src="https://github.com/user-attachments/assets/381bc03e-2bb6-4aef-bcd8-21b56129de3c" />
 
 **IMAGE K – Readiness & Liveness Probe Verification**
 
@@ -187,6 +210,8 @@ This ensures **safe autoscaling and zero‑downtime behavior**.
 
 ## Observability
 
+<img width="1008" height="539" alt="image" src="https://github.com/user-attachments/assets/4ec0e042-667d-493b-9ff8-3acbc78f8737" />
+
 **IMAGE L – Azure Monitor**
 
 * Cluster metrics collected via Azure Monitor
@@ -195,6 +220,8 @@ This ensures **safe autoscaling and zero‑downtime behavior**.
   * Node utilization
   * Pod health
   * Autoscaling events
+
+<img width="1003" height="554" alt="image" src="https://github.com/user-attachments/assets/77f85b5e-2bdb-4a3d-bb77-fd72f1bd5dcd" />
 
 **IMAGE M – Grafana Dashboard**
 
